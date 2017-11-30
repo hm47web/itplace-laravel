@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/fibonacci', function () {
+    return view('fibonacci');
+});
+
+Route::get('fibonacci/{numbers}', 'FibonacciController@getNumbers');
+
