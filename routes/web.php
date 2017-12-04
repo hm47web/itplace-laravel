@@ -21,3 +21,7 @@ Route::get('/fibonacci', function () {
 
 Route::get('fibonacci/{numbers}', 'FibonacciController@getNumbers');
 
+
+Route::get('fibonacci1/{count}', 'FibonacciController1@show')
+    ->where('count', '[0-9]+');
+
